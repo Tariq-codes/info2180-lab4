@@ -1,12 +1,110 @@
+
 body {
-    font-family: Arial, sans-serif; 
-    background-color: #f0f0f0; 
-    margin: 0; 
-    padding: 20px; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #dfefff;
 }
 
-h1{
-    font-size: 50px;
-    font-weight: 500;
+
+header {
+    background-color: #2b3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
+
+header h1 {
+    font-size: 2rem;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+.searchContainer h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: black;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-left: 20px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #2b3e50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+button:hover {
+    background-color: #1f2d3b;
+}
+
+
+#result {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 500px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for result headings */
+#result h2 {
+    font-size: 2rem;
+    color: #2b3e50;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#result-p{
+    text-align: center;
+    color: grey;
+}
+
+#result h3 {
+    font-size: 1.5rem;
+    color: #1f2d3b;
+    margin: 0 0 8px;
+}
+
+#result h4 {
+    font-size: 1.2rem;
+    color: #1d2e3f;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+/* Style for biography text */
+#result p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Style for "Superhero not found" message */
+#result .error {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 
